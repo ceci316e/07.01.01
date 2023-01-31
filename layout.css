@@ -1,3 +1,16 @@
+html {
+  --produktliste: rgba(128, 128, 128, 0.547);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+/******************* Produktliste *******************/
 .produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,5 +21,5 @@
   font-size: 1.5rem;
   color: black;
   padding: 2em;
-  background-color: rgba(0, 0, 255, 0.431);
+  background-color: var(--produktliste);
 }
