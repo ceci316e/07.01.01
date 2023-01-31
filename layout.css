@@ -1,0 +1,12 @@
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.produktliste a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 2em;
+  background-color: rgba(0, 0, 255, 0.431);
+}
