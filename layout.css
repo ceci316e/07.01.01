@@ -10,16 +10,68 @@ main {
   max-width: 1200px;
   margin-inline: auto;
 }
-/******************* Produktliste *******************/
-.produktliste {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+img {
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+  padding-bottom: 2rem;
 }
-.produktliste a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: black;
-  padding: 2em;
-  background-color: var(--produktliste);
+h1 {
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+/******************* Mobil *******************/
+@media (max-width: 620px) {
+  /******************* Index *******************/
+  .logo {
+    max-width: 50%;
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+  .menu {
+    padding-left: 1.6rem;
+  }
+  .menu a {
+    color: rgba(0, 0, 0, 0.543);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-left: 0.7rem;
+  }
+  /******************* Kategori *******************/
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .produktliste a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 2em;
+    background-color: var(--produktliste);
+  }
+  /******************* Produktliste *******************/
+  .imidten {
+    text-align: center;
+  }
+  .tekst {
+    padding-bottom: 3rem;
+    padding-top: 1.2rem;
+  }
+  .imidtenFarve {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.134);
+  }
+  .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 50px;
+  }
+  /******************* Produkt *******************/
 }
