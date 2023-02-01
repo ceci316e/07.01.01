@@ -1,5 +1,6 @@
 html {
   --produktliste: rgba(128, 128, 128, 0.547);
+  --fonts: "Quicksand", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@ html {
   padding: 0;
 }
 main {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-inline: auto;
 }
 img {
@@ -17,14 +18,22 @@ img {
   padding-bottom: 2rem;
 }
 h1 {
-  padding-left: 2rem;
   padding-top: 3rem;
   padding-bottom: 2rem;
   font-size: 3rem;
+  font-family: var(--fonts);
+}
+h3 {
+  font-family: var(--fonts);
+  padding-bottom: 0.6rem;
+}
+p {
+  font-family: var(--fonts);
+  padding-top: 0.3rem;
 }
 
 /******************* Mobil *******************/
-@media (max-width: 620px) {
+@media (max-width: 621px) {
   /******************* Index *******************/
   .logo {
     max-width: 50%;
@@ -44,8 +53,10 @@ h1 {
   /******************* Kategori *******************/
   .produktliste {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   .produktliste a {
     text-decoration: none;
@@ -53,6 +64,9 @@ h1 {
     color: black;
     padding: 2em;
     background-color: var(--produktliste);
+  }
+  .kategoriOverskrift {
+    padding-left: 2rem;
   }
   /******************* Produktliste *******************/
   .imidten {
@@ -74,4 +88,136 @@ h1 {
     gap: 50px;
   }
   /******************* Produkt *******************/
+  .vækFraSiden {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .produktNavn {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .andenFarve {
+    color: rgba(0, 0, 0, 0.507);
+    padding-bottom: 1rem;
+  }
+  button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+    border: 2px solid;
+    width: 100%;
+    padding: 14px 28px;
+    background-color: rgba(255, 0, 0, 0.713);
+  }
+  .knap {
+    padding-top: 1rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  .information {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .informationMatriale {
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 621px) {
+  /******************* Index *******************/
+  .logo {
+    max-width: 38%;
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+  .menu {
+    padding-left: 1.6rem;
+  }
+  .menu a {
+    color: rgba(0, 0, 0, 0.543);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-left: 0.7rem;
+  }
+  /******************* Kategori *******************/
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .produktliste a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 2em;
+    background-color: var(--produktliste);
+  }
+  .kategoriOverskrift {
+    padding-left: 2rem;
+  }
+  /******************* Produktliste *******************/
+  .imidten {
+    text-align: center;
+  }
+  .tekst {
+    padding-bottom: 3rem;
+    padding-top: 1.2rem;
+  }
+  .imidtenFarve {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.134);
+  }
+  .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 50px;
+  }
+  /******************* Produkt *******************/
+  .vækFraSiden {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .produktNavn {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .andenFarve {
+    color: rgba(0, 0, 0, 0.507);
+    padding-bottom: 1rem;
+  }
+  button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+    border: 2px solid;
+    width: 100%;
+    padding: 14px 28px;
+    background-color: rgba(255, 0, 0, 0.713);
+  }
+  .knap {
+    padding-top: 1rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  .information {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .informationMatriale {
+    padding-bottom: 1.5rem;
+  }
 }
