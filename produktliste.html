@@ -9,7 +9,7 @@
     <title>Produkt</title>
 </head>
 
-<body>
+<body class="productist">
     <header>
         <div class="logo">
             <a href="kategori.html">
@@ -23,11 +23,57 @@
         </div>
     </header>
     <main>
-        <div class="imidten1">
-            <h1>Produkter</h1>
-        </div>
-        <div class="grid_4-4-4-4">
-            <div class="imidten1">
+        <h1>Produkter</h1>
+        <template id="smallProductTemplate">
+            <article class="smallProduct">
+                <div class="imidten1">
+                    <div class="imidtenFarve">
+                        <a href="produkt.html">
+                            <img src="billeder/1533.png" alt="Produkt">
+                        </a>
+                    </div>
+                    <div class="tekst">
+                        <h3>Red Solid Round Neck T-Shirt</h3>
+                        <div class="merePladsImellem">
+                            <p><span id="mærke">Nike</span> | Tshirt</p>
+                        </div>
+                        <div class="merePladsImellem">
+                            <p>DKK 799,-</p>
+                        </div>
+                        <a href="produkt.html">Læs mere</a>
+                    </div>
+                </div>
+            </article>
+        </template>
+
+        <!-- <article class="smallProduct onSale">
+            <div class="imidten">
+                <div class="imidtenFarve">
+                    <a href="produkt.html">
+                        <img src="billeder/1573.png" alt="Produkt">
+                    </a>
+                </div>
+                <div>
+                    <div class="tekst">
+                        <h3>Women's Simplicity Mid-Rise Capri Leggings</h3>
+                        <div class="merePladsImellem">
+                            <p>Nike | Leggings</p>
+                        </div>
+                        <div class="merePladsImellem">
+                            <p>DKK 899,-</p>
+                        </div>
+                        <div class="discounted">
+                            <p>NU DKK 593,-</p>
+                            <p>-34%</p>
+                        </div>
+                        <a href="produkt.html">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="smallProduct soldOut">
+            <div class="imidten">
                 <div class="imidtenFarve">
                     <a href="produkt.html">
                         <img src="billeder/1533.png" alt="Produkt">
@@ -44,6 +90,9 @@
                     <a href="produkt.html">Læs mere</a>
                 </div>
             </div>
+        </article>
+
+        <article class="smallProduct soldOut onSale">
             <div class="imidten">
                 <div class="imidtenFarve">
                     <a href="produkt.html">
@@ -59,51 +108,16 @@
                         <div class="merePladsImellem">
                             <p>DKK 899,-</p>
                         </div>
-                        <a href="produkt.html">Læs mere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="imidten">
-                <div class="imidtenFarve">
-                    <a href="produkt.html">
-                        <img src="billeder/1533.png" alt="Produkt">
-                    </a>
-                </div>
-                <div class="tekst">
-                    <h3>Red Solid Round Neck T-Shirt</h3>
-                    <div class="merePladsImellem">
-                        <p>Puma | Tshirt</p>
-                    </div>
-                    <div class="merePladsImellem">
-                        <p>DKK 799,-</p>
-                    </div>
-                    <div class="procenter">
-                        <p>NU DKK 719,-</p>
-                        <p>-20%</p>
-                    </div>
-                    <a href="produkt.html">Læs mere</a>
-                </div>
-            </div>
-            <div class="imidten">
-                <div class="imidtenFarve">
-                    <a href="produkt.html">
-                        <img src="billeder/1573.png" alt="Produkt">
-                    </a>
-                </div>
-                <div>
-                    <div class="tekst">
-                        <h3>Women's Simplicity Mid-Rise Capri Leggings</h3>
-                        <div class="merePladsImellem">
-                            <p>Nike | Leggings</p>
-                        </div>
-                        <div class="merePladsImellem">
-                            <p>DKK 899,-</p>
+                        <div class="discounted">
+                            <p>NU DKK 593,-</p>
+                            <p>-34%</p>
                         </div>
                         <a href="produkt.html">Læs mere</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </article> -->
+        <script src="produktliste.js"></script>
     </main>
     <footer>
 

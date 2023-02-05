@@ -76,9 +76,6 @@ a {
     padding-left: 2rem;
   }
   /******************* Produktliste *******************/
-  .imidten1 {
-    text-align: center;
-  }
   .tekst {
     padding-bottom: 3rem;
     padding-top: 1.2rem;
@@ -86,13 +83,6 @@ a {
   .imidtenFarve {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.134);
-  }
-  .grid_4-4-4-4 {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 50px;
   }
   .procenter {
     display: grid;
@@ -106,6 +96,44 @@ a {
   }
   .merePladsImellem {
     padding-bottom: 0.5rem;
+  }
+  .productist article.soldOut img {
+    opacity: 0.5;
+  }
+  .productist article.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    background: rgba(128, 128, 128, 0.715);
+    color: black;
+    padding: 1rem;
+  }
+  .productist article > * {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .productist article.onSale .discounted {
+    display: flex;
+    justify-content: space-between;
+  }
+  .discounted p:last-child {
+    background: red;
+    padding: 0.4rem;
+    font-size: 1.5rem;
+  }
+  .productist article .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 50px;
+  }
+  .productist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    gap: 2rem;
+  }
+  .productist main h1 {
+    grid-column: 1/-1;
   }
   /******************* Produkt *******************/
   .vækFraSiden {
@@ -199,13 +227,6 @@ a {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.134);
   }
-  .grid_4-4-4-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 50px;
-  }
   .procenter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,7 +240,44 @@ a {
   .merePladsImellem {
     padding-bottom: 0.5rem;
   }
-
+  .productist article.soldOut img {
+    opacity: 0.5;
+  }
+  .productist article.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    background: rgba(128, 128, 128, 0.715);
+    color: black;
+    padding: 1rem;
+  }
+  .productist article > * {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .productist article.onSale .discounted {
+    display: flex;
+    justify-content: space-between;
+  }
+  .discounted p:last-child {
+    background: red;
+    padding: 0.4rem;
+    font-size: 1.5rem;
+  }
+  .productist article .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 50px;
+  }
+  .productist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    gap: 2rem;
+  }
+  .productist main h1 {
+    grid-column: 1/-1;
+  }
   /******************* Produkt *******************/
   .vækFraSiden {
     padding-left: 2rem;
