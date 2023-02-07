@@ -17,12 +17,15 @@ function showProduct(product) {
   // 5. clone
   const copy = template.cloneNode(true);
   // 6. skifte data
+  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector("#pris").textContent = product.price;
   copy.querySelector("#mærke").textContent = product.brandname;
-  copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  copy.querySelector(".discounted p").textContent = Math.round(product.price - (product.price * product.discount) / 100);
-  copy.querySelector(".discounted p+p").textContent = product.discount;
+  // Regner rabatten ud og tilføjer DKK & % tegn
+  copy.querySelector(".discounted p").textContent = `${Math.round(product.price - product.price * (product.discount / 100))} ,- DKK`;
+  copy.querySelector(".discounted p+p").textContent = `${product.discount}%`;
+
   // Navigere over til produktsiden og sende id med
   copy.querySelector("a").href = "produkt.html?id=" + product.id;
 

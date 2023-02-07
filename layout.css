@@ -177,14 +177,11 @@ a {
 }
 @media (min-width: 621px) {
   /******************* Index *******************/
-  .logo {
-    max-width: 38%;
-    text-align: left;
-    padding-top: 3rem;
-    padding-left: 2rem;
-  }
   .menu {
-    padding-left: 1.6rem;
+    padding-left: 1.9rem;
+  }
+  .pladsTilsiden {
+    padding-left: 3rem;
   }
   .menu a {
     color: rgba(0, 0, 0, 0.543);
@@ -196,6 +193,18 @@ a {
     font-size: 2rem;
     padding-top: 7rem;
     text-align: center;
+  }
+  :root {
+    --off-color: red;
+  }
+  .mainNav h1 span {
+    display: inline-block;
+    transform: scaleX(-1) translateX(-0.2rem);
+    color: var(--off-color);
+  }
+  .mainNav > * {
+    margin: 0;
+    text-decoration: none;
   }
   /******************* Kategori *******************/
   .produktliste {
