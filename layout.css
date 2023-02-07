@@ -223,10 +223,11 @@ a {
     padding-bottom: 3rem;
     padding-top: 1.2rem;
   }
+  /*
   .imidtenFarve {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.134);
-  }
+  } */
   .procenter {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,6 +254,9 @@ a {
   .productist article > * {
     margin: 0;
     font-size: 0.9rem;
+  }
+  .discounted {
+    display: none;
   }
   .productist article.onSale .discounted {
     display: flex;

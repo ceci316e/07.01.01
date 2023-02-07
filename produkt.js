@@ -1,9 +1,13 @@
-/* får fat i produktet */
-const id = 1532;
+// lav url search obejkt
+const urlParams = new URLSearchParams(window.location.search);
+// find id
+console.log(urlParams);
+// får fat i produktet
+const id = urlParams.get("id");
 const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
-/* billede */
+// billede
 const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
-/* res er forkortelse for response */
+// res er forkortelse for response
 function hentData() {
   fetch(url)
     .then((res) => res.json())
