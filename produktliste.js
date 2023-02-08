@@ -1,10 +1,20 @@
 //https://kea-alt-del.dk/t7/api/products/
 
+const urlParams = new URLSearchParams(window.location.search);
+console.log("urlParams", urlParams);
+
+const cat = urlParams.get("cat");
+console.log("cat", cat);
+const url = `https://kea-alt-del.dk/t7/api/products?category=${cat}`;
+
+document.querySelector("h2").textContent = cat;
+
 // 1. hente data
 async function getData() {
-  const response = await fetch("https://kea-alt-del.dk/t7/api/products?limit=10");
+  const response = await fetch(url);
   const data = await response.json();
-  //console.log(data);
+
+  console.log(data);
   // 2. loope // 3. for hver
   data.forEach(showProduct);
 }
@@ -23,7 +33,7 @@ function showProduct(product) {
   copy.querySelector("#pris").textContent = product.price;
   copy.querySelector("#mærke").textContent = product.brandname;
   // Regner rabatten ud og tilføjer DKK & % tegn
-  copy.querySelector(".discounted p").textContent = `${Math.round(product.price - product.price * (product.discount / 100))} ,- DKK`;
+  copy.querySelector(".discounted p").textContent = `DKK ${Math.round(product.price - product.price * (product.discount / 100))},-`;
   copy.querySelector(".discounted p+p").textContent = `${product.discount}%`;
 
   // Navigere over til produktsiden og sende id med
