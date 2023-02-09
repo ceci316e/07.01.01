@@ -109,6 +109,7 @@ a {
     color: black;
     padding: 2em;
     background-color: var(--produktliste);
+    box-shadow: 2.5px 5px rgba(0, 0, 0, 0.583);
   }
   .kategoriOverskrift {
     padding-left: 2rem;
@@ -186,6 +187,7 @@ a {
   .vækFraSiden {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 2rem;
   }
   .produktNavn {
     font-size: 2rem;
@@ -293,6 +295,7 @@ a {
     padding: 2em;
     background-color: var(--produktliste);
     text-align: center;
+    box-shadow: 2.5px 5px rgba(0, 0, 0, 0.583);
   }
   .kategoriOverskrift {
     padding-left: 2rem;
@@ -372,6 +375,7 @@ a {
   .vækFraSiden {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 2rem;
   }
   .produktNavn {
     font-size: 2rem;
@@ -413,5 +417,9 @@ a {
   }
   .flex_col2 {
     padding-left: 2rem;
+  }
+  .størrelser {
+    padding: 0.4rem;
+    font-size: 1rem;
   }
 }
